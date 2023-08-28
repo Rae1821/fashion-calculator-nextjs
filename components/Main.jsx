@@ -41,7 +41,7 @@ const Main = () => {
                 />
             </div>
                 <div className="works-right mb-6 w-11/12">
-                    <h2 className="text-center mb-6 font-extrabold text-3xl lg:text-left lg:text-4xl lg:pt-2 lg:pl-4 lg:mb-8 lg:font-black">
+                    <h2 className="text-center mb-6 font-extrabold text-3xl lg:text-left lg:text-4xl lg:pt-2 lg:pl-4 lg:mb-8 lg:font-black lg:tracking-wide">
                         The Perks
                     </h2>
                     <div className="perks-container text-left lg:grid lg:grid-cols-2 lg:grid-rows-2 lg:gap-8 lg:p-4">
@@ -87,7 +87,7 @@ const Main = () => {
             }
             <div className="measuring-tips my-16 bg-tropicana lg:p-8 lg:w-11/12 lg:mx-auto">
                 <div className="measuring-tips-inner flex flex-col items-center justify-between p-4 md:grid md:grid-cols-2 md:grid-rows-4 lg:grid-cols-[1fr_300px_400px_300px_1fr] lg:gap-8 lg:pt-4 lg:pb-12">
-                    <h2 className="font-sans font-bold text-dark text-2xl max-w-lg pt-8 pb-4 text-center md:col-span-2 md:row-span-1 md:mx-auto lg:col-start-3 lg:col-end-4 lg:text-4xl">Measuring Tips
+                    <h2 className="font-sans font-bold text-dark text-2xl max-w-lg pt-8 pb-4 text-center md:col-span-2 md:row-span-1 md:mx-auto lg:col-start-3 lg:col-end-4 lg:text-4xl lg:font-black lg:tracking-wide">Measuring Tips
                         <span className="block text-base mt-2 mb-4 font-medium ">Tips to get the most accurate result</span>
                     </h2>
                     <div className="max-w-1/2 md:col-span-2 md:row-span-1 md:mx-auto lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4 lg:max-w-full">
@@ -142,26 +142,28 @@ const Main = () => {
                 //Testimonials
             }
 
-            <div className="testimonials-container flex justify-center items-center flex-col pt-4 pb-20">
-                <h2 className="font-bold font-sans text-3xl text-dark mb-4 text-center">Testimonials
+            <div className="testimonials-container flex justify-center items-center flex-col pt-4 pb-20 lg:mt-40">
+                <h2 className="font-bold font-sans text-3xl text-dark mb-4 text-center lg:mb-12 lg:text-4xl lg:font-black lg:tracking-wide">Testimonials
                     <span className="text-base block mt-2 mb-4 font-medium">See what our previous clients have to say</span>
                 </h2>
-                <div className="testimonial-wrapper flex justify-center items-center flex-col">
-                    <div className="testimonial w-11/12 p-8 border border-light shadow-lg">
+                <div className="testimonial-wrapper flex justify-center items-center flex-col lg:flex-row lg:max-w-6xl lg:justify-between lg:items-stretch">
+
+                    <div className="testimonial w-11/12 p-8 border border-light shadow-lg lg:w-1/3 lg:mr-4">
                     <Image
                         src="/assets/images/reviewer-1.jpg"
                         alt="reviewer one"
-                        width={50}
-                        height={50}
+                        width={40}
+                        height={40}
                         className="rounded-full mx-auto mb-8"
                     />
                         <p className="text-sm leading-8 text-dark">&quot;I had no idea how important it is to know your body shape. Once
                         I found out what mine was, I was able to choose the items that were
-                        perfect for my shape, no more guessing!&quot;
+                        perfect for my shape!&quot;
                         </p>
                         <p className="author text-center font-bold mt-8 text-sm">Betty Sue</p>
                     </div>
-                    <div className="testimonial w-11/12 p-8 border border-light shadow-lg my-4 mx-8">
+
+                    <div className="testimonial w-11/12 p-8 border border-light shadow-lg my-4 mx-8 lg:w-1/3 lg:mx-0 lg:my-0">
                     <Image
                         src="/assets/images/reviewer-2.jpg"
                         alt="reviewer two"
@@ -175,7 +177,8 @@ const Main = () => {
                         </p>
                         <p className="author text-center font-bold mt-8 text-sm">Tiffany White</p>
                     </div>
-                    <div className="testimonial w-11/12 p-8 border border-light shadow-lg">
+
+                    <div className="testimonial w-11/12 p-8 border border-light shadow-lg lg:w-1/3 lg:ml-4">
                     <Image
                         src="/assets/images/reviewer-3.jpg"
                         alt="reviewer three"

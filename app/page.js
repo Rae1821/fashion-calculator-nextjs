@@ -158,8 +158,8 @@ function handleShowChatbot () {
         {
             /* Faq Section */
         }
-        <div className="faqs-container">
-            <h2 className="font-bold text-4xl text-dark mb-4 text-center">FAQs</h2>
+        <div className="faqs-container mt-40">
+            <h2 className="font-bold text-3xl text-dark mb-4 text-center lg:text-4xl lg:font-black lg:tracking-wide">FAQs</h2>
             <span className="text-base block mt-2 text-center">Answers to common questions</span>
             <div className="faqs w-full max-w-3xl mx-auto p-6">
                 {faqs.map((faq, i) => (
