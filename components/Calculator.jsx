@@ -2,12 +2,12 @@
 
 
 
-const Calculator = ({ handleSubmit, handleChange, formData }) => {
+const Calculator = ({ handleFormSubmit, handleChange, formData }) => {
 
   return (
     <div className="calculator-container w-full py-12 px-4 mt-8 flex justify-center bg-pattern">
         <div className="calculator-form-wrapper flex items-center justify-center w-11/12 max-w-md bg-light pt-12 pb-14 px-4 rounded-xl shadow-[10px_10px_#40B6AD] border-4 border-light-turq" id="calculator-form">
-            <form onSubmit={handleSubmit} className="calculator">
+            <form onSubmit={handleFormSubmit} className="calculator">
                 <h4 className="text-dark tracking-wider text-2xl pb-8 text-center">Enter Your Measurements</h4>
                     <div className="form--element flex items-center justify-center py-2 px-6">
                         <label htmlFor="shoulders"></label>

@@ -12,6 +12,7 @@ module.exports = {
       'tropicana': '#F27052',
       'dark': '#2B283A',
       'light': '#F2F2F2',
+      'black': 'rgba(0,0,0,0.7)',
       assistant: 'rgba(var(--color-assistant), <alpha-value>)',
       user: 'rgba(var(--color-user), <alpha-value>)',
     },
