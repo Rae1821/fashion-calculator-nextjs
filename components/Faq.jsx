@@ -4,7 +4,7 @@ const Faq = ({ faq, index, toggleFaq }) => {
 
   return (
     <div
-        className="faq bg-light-turq py-3 px-2 my-4 rounded shadow-md "
+        className="faq bg-lightest-green py-3 px-2 my-4 rounded shadow-md "
         key={index}
         onClick={() => toggleFaq(index)}
     >

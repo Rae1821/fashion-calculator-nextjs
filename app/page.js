@@ -8,6 +8,7 @@ import Main from '@/components/Main';
 import Calculator from '@/components/Calculator';
 import data from '@/bodyShapeData';
 import Results from '@/components/Results';
+//import Nav from '@components/Nav';
 
 
 export default function Home() {
@@ -99,7 +100,7 @@ const handleFormSubmit = (event) => {
         setShapeResults({name: 'Triangle', id: 3})
 
     } else if(formData.waist / formData.shoulders >= 0.75 && (formData.shoulders * 0.95) < formData.hips) {
-        console.log("you have a rectangle body shape")
+        //console.log("you have a rectangle body shape")
         setShapeResults({name: 'Rectangle', id: 4})
     }
     setShowCalculator(false)
@@ -153,6 +154,7 @@ function handleShowChatbot () {
 
   return (
     <div>
+        {/* <Nav /> */}
         <Main />
 
         {
@@ -176,18 +178,23 @@ function handleShowChatbot () {
         {
             /* Call to Action */
         }
-        <div className="btn-container flex justify-center my-8">
-            <button
-                onClick={toggleShowCalculator}
-                className="orange-btn flex justify-between bg-tropicana cursor-pointer rounded-md px-8 py-4 uppercase tracking-wider transition ease-out duration-300 hover:shadow-3xl hover:transition hover:ease-in hover:duration-300"
-            >
-                Let's Goooo
-                <span className='pl-4'>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 animate-bounce">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75" />
-                    </svg>
-                </span>
-            </button>
+        <div className="get-started mt-12 mb-12">
+            <h2 className="text-3xl lg:text-3xl text-center font-extrabold">Ready to get started?</h2>
+
+            <div className="btn-container flex justify-center pt-8 pb-12">
+                <button
+                id="lets-go"
+                    onClick={toggleShowCalculator}
+                    className="orange-btn flex justify-between text-base bg-tropicana cursor-pointer rounded-md px-8 py-4 uppercase tracking-wider transition ease-out duration-300 hover:shadow-3xl hover:transition hover:ease-in hover:duration-300 lg:text-lg"
+                >
+                    Let's Goooo
+                    <span className='pl-4'>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 animate-bounce">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75" />
+                        </svg>
+                    </span>
+                </button>
+            </div>
         </div>
 
         {/* Calculator */}
@@ -207,39 +214,50 @@ function handleShowChatbot () {
         }
         {showChatbot ?
             <section className="chatbot-container flex justify-center content-center">
-            <div className="chatbot-wrapper h-auto border-2 border-black rounded shadow-3xl my-28 p-5">
-                <div className="chatbot-header border-b-2 border-b-black border-dotted">
-                    <h1 className="font-sans text-lg text-center font-bold pb-2 flex justify-between">Sophie The AI Stylist
-                        <span className="cursor-pointer">
-                            <button className="close-btn" onClick={handleCloseChatbot}>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                            </button>
-                        </span>
-                    </h1>
-                </div>
+                <div className="chatbot-wrapper w-11/12 md:w-2/3 lg:w-1/2 h-auto border-2 border-black rounded shadow-3xl mt-4 mb-28 p-5">
+                    <div className="chatbot-header border-b-2 border-b-black border-dotted">
+                        <h1 className="font-sans text-lg lg:text-xl font-bold pb-2 flex justify-between">Sophie The AI Stylist
+                            <span className="cursor-pointer">
+                                <button className="close-btn w-1/4" onClick={handleCloseChatbot}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                            </span>
+                        </h1>
+                    </div>
 
-                <div className="chatbot-conversation mx-auto w-full max-w-md py-8 flex flex-col stretch">
-                    {messages.map(m => (
-                        <div key={m.id} className={m.role === 'user' ? 'bg-assistant/80 text-black mb-6 text-right px-2 py-2 rounded-b-lg rounded-tl-lg' : 'bg-user/40 text-black mb-6 px-2 py-2 rounded-b-lg rounded-tr-lg'} >
-                            {m.role === 'user' ? 'User: ' : 'AI: ' }
-                            {m.content}
-                        </div>
-                    ))}
+                    <div className="chatbot-conversation mx-auto w-full max-w-lg py-8 flex flex-col stretch">
+                        <p className="bg-user/40 text-black mb-6 px-2 py-2 rounded-b-lg rounded-tr-lg">AI: Hello, what can I help you style today?</p>
+                        {messages.map(m => (
+                            <div key={m.id} className={m.role === 'user' ? 'bg-assistant/80 text-black mb-6 text-right px-2 py-2 rounded-b-lg rounded-tl-lg' : 'bg-user/40 text-black mb-6 px-2 py-2 rounded-b-lg rounded-tr-lg whitespace-pre-wrap'} >
+                                {m.role === 'user' ? 'User: ' : 'AI: ' }
+                                {m.content}
+                            </div>
+                        ))}
 
-                    <form onSubmit={handleSubmit} className="flex justify-between mt-32">
-                        <input
-                            className="w-full max-w-md border border-gray-300 rounded mx-auto shadow-xl p-2"
-                            value={input}
-                            placeholder="Say something..."
-                            onChange={handleInputChange}
-                        />
-                        <button type="submit" className="bg-teal-500 rounded-lg px-4 shadow-xl text-white">Send</button>
-                    </form>
+                        <form onSubmit={handleSubmit} className="flex justify-between mt-32">
+                            <input
+                                className="w-full lg:max-w-md border border-light-turq rounded rounded-tr-none rounded-br-none mx-auto shadow-lg p-2"
+                                value={input}
+                                placeholder="Say something..."
+                                onChange={handleInputChange}
+                            />
+                            <button type="submit" className="bg-light-turq rounded-md rounded-tl-none rounded-bl-none px-4 shadow-lg text-white">Send</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </section> : ''}
+            </section> : ''}
+
+        {/* Footer */}
+        <footer className="bg-dark h-10 pt-8 pb-12 text-center text-light flex flex-col justify-center">
+            <p className="pt-8 text-sm">Copyright © 2023 | Created by
+                <a href="https://www.rachelandersondooley.com" alt="portfolio site link" target="_blank" className="text-light-turq pl-2">
+                    Rachel Dooley
+                </a>
+            </p>
+            <p className="pl-2 text-xs pt-4"> Image by <a href="https://www.freepik.com/free-vector/cartoon-types-female-body-shapes_12276372.htm#query=body%20shape&position=43&from_view=keyword&track=ais">Freepik</a></p>
+        </footer>
 
 
     </div>

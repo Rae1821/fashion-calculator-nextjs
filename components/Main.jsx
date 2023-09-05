@@ -1,43 +1,52 @@
-import Image from 'next/image'
+import Image from 'next/image';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 
 const Main = () => {
 
   return (
     <div>
-        <div className="hero bg-black mb-32 h-screen bg-[url('/assets/images/women-shapes.jpg')] bg-cover bg-no-repeat bg-blend-overlay">
-            <div className="z-10 relative hero--content w-3/4 flex flex-col text-left pl-12 pt-28 lg:max-w-lg">
+        <div className="hero flex flex-col lg:flex-row justify-between items-center h-screen max-w-6xl mx-auto pt-28">
+            <div className="z-10 relative hero--content w-3/4 flex flex-col text-left lg:max-w-lg">
                 <p className="pre--title text-tropicana uppercase text-xs font-sans pb-2">premiere fashion secrets</p>
-                <h1 className="title font-['Abril_Fatface'] drop-shadow-lg font-bold text-4xl my-2 text-light tracking-tight lg:text-6xl ">The Body Shape
+                <h1 className="title font-['Abril_Fatface'] font-bold text-4xl my-2 text-dark tracking-tight lg:text-6xl ">The Body Shape
                     <span className="block pt-2">Calculator</span>
                 </h1>
-                    <p className="description font-sans text-light font-light leading-8 pt-6 lg:max-w-md">
+                    <p className="description font-sans text-dark font-light leading-8 pt-6 md:max-w-md">
                         If you want to look and feel better in your clothes, without going on a diet or hitting the gym, I&apos;m going to let you in on a little secret...
                         <em>It&apos;s not about your weight, it&apos;s about your shape!</em>
                         <br /><br />
                         Knowing your body shape is the first step to looking better in your clothes. No more feeling overwhelemed while shopping for clothes and getting dressed will be a breeze.
                         Ready to get started?
                     </p>
-                    <div className="animate-bounce mt-12 ml-24">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#F27052" className="w-8 h-8">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
-                        </svg>
-                    </div>
+                    <Link
+                        href="#lets-go"
+                        className="uppercase py-4 px-4 bg-light-green mt-8 w-3/4 md:w-1/2 lg:w-2/3 rounded-md text-center transition ease-out duration-300 hover:shadow-3xl hover:transition hover:ease-in hover:duration-300 lg:text-lg"
+                    >
+                        Let's do this!
+                    </Link>
+             </div>
+             <div className="hidden md:block h-auto w-2/5 pt-8 ml-24">
+                <Image
+                    src="/assets/images/hero-img.png"
+                    alt="women with different body shapes"
+                    height={800}
+                    width={800}
+                />
              </div>
         </div>
             {
                 //How it works section
             }
-        <div id="works" className="works--container flex flex-col-reverse mt-16 mx-auto pt-6 px-6 md:w-3/4 lg:w-full lg:flex-row lg:items-center lg:justify-between lg:max-w-6xl lg:mt-24  lg:p-4">
-            <div className="works-left hidden lg:block lg:w-3/4">
+        <div id="benefits" className="works--container flex flex-col-reverse mt-16 mx-auto pt-6 px-6 md:w-3/4 lg:w-full lg:flex-row lg:items-center lg:justify-between lg:max-w-6xl lg:mt-24  lg:p-4">
+            <div className="works-left hidden lg:block lg:w-1/3 lg:mr-0">
                 <Image
-                    src="/assets/images/fashion-img.png"
-                    alt="illustration of a woman getting measured in front of a mirror"
-                    width={400}
+                    src="/assets/images/woman-white-bathing-suit.svg"
+                    alt="woman in a teal bathing suit"
+                    width={200}
                     height={400}
-                    style={{
-                        borderRadius: '50%',
-                    }}
+
                 />
             </div>
                 <div className="works-right mb-6 w-11/12">
@@ -85,51 +94,46 @@ const Main = () => {
             {
                 //Measuring tips
             }
-            <div className="measuring-tips my-16 bg-tropicana lg:p-8 lg:w-11/12 lg:mx-auto">
+            <div id="tips" className="measuring-tips my-16 bg-gradient-to-br from-tropicana via-light-tropicana to-lightest-tropicana lg:p-8 lg:w-11/12 lg:mx-auto">
                 <div className="measuring-tips-inner flex flex-col items-center justify-between p-4 md:grid md:grid-cols-2 md:grid-rows-4 lg:grid-cols-[1fr_300px_400px_300px_1fr] lg:gap-8 lg:pt-4 lg:pb-12">
                     <h2 className="font-sans font-bold text-dark text-2xl max-w-lg pt-8 pb-4 text-center md:col-span-2 md:row-span-1 md:mx-auto lg:col-start-3 lg:col-end-4 lg:text-4xl lg:font-black lg:tracking-wide">Measuring Tips
                         <span className="block text-base mt-2 mb-4 font-medium ">Tips to get the most accurate result</span>
                     </h2>
                     <div className="max-w-1/2 md:col-span-2 md:row-span-1 md:mx-auto lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4 lg:max-w-full">
                         <Image
-                            src="/assets/images/waist-measure.jpg"
-                            alt="measuring waist"
-                            width={500}
-                            height={500}
-                            style={{
-                                objectFit: 'contain',
-                                height: '100%',
-                                width: '100%',
-                            }}
+                            src="/assets/images/woman-teal-bathing-suit.svg"
+                            alt="woman in a white bathing suit"
+                            width={200}
+                            height={300}
                         />
                     </div>
 
-                        <p className="steps text-lg mt-8 mb-8 mx-auto text-left max-w-xs step-one text-dark leading-8 lg:col-start-2 lg:col-end-2 lg:row-start-2 lg:row-end-2">
-                            <span className="font-black pr-2 block text-center text-2xl text-dark mb-4">
+                        <p className="steps text-lg lg:text-xl mt-8 mb-8 mx-auto text-center md:text-left max-w-xs step-one text-dark leading-8 lg:col-start-2 lg:col-end-2 lg:row-start-2 lg:row-end-2">
+                            <span className="font-black pr-2 block text-center text-3xl lg:text-4xl text-dark mb-4">
                             01
                             </span>Look into a full length mirror or get someone to assist you
                         </p>
 
-                        <p className="steps text-lg mt-2 mb-8 mx-auto text-left max-w-xs step-two text-dark leading-8 lg:col-start-2 lg:col-end-2 lg:row-start-3 lg:row-end-3">
-                            <span className="font-black pr-2 block text-center text-2xl text-dark mb-4">
+                        <p className="steps text-lg lg:text-xl mt-2 mb-8 mx-auto text-center md:text-left max-w-xs step-two text-dark leading-8 lg:col-start-2 lg:col-end-2 lg:row-start-3 lg:row-end-3">
+                            <span className="font-black pr-2 block text-center text-3xl lg:4xl text-dark mb-4">
                             02
                             </span>If you are between numbers round up to the nearest whole number
                         </p>
 
-                        <p className="steps text-lg mt-2 mb-8 mx-auto text-left max-w-xs step-three text-dark leading-8 lg:col-start-4 lg:col-end-4 lg:row-start-2 lg:row-end-3">
-                            <span className="font-black pr-2 block text-center text-2xl text-dark mb-4">
+                        <p className="steps text-lg lg:text-xl mt-2 mb-8 mx-auto text-center md:text-left max-w-xs step-three text-dark leading-8 lg:col-start-4 lg:col-end-4 lg:row-start-2 lg:row-end-3">
+                            <span className="font-black pr-2 block text-center text-3xl lg:text-4xl text-dark mb-4">
                             03
                             </span>Wrap the tape measure around the fullest part of each area
                         </p>
 
-                        <p className="steps text-lg mt-2 mb-8 mx-auto text-left max-w-xs step-four text-dark leading-8 lg:col-start-4 lg:col-end-4 lg:row-start-3 lg:row-end-3">
-                            <span className="font-black pr-2 block text-center text-2xl text-dark mb-4">
+                        <p className="steps text-lg lg:text-xl mt-2 mb-8 mx-auto text-center md:text-left max-w-xs step-four text-dark leading-8 lg:col-start-4 lg:col-end-4 lg:row-start-3 lg:row-end-3">
+                            <span className="font-black pr-2 block text-center text-3xl lg:text-4xl text-dark mb-4">
                             04
                             </span>Keep measuring tape horizontal to the floor
                         </p>
 
-                        <p className="steps text-lg mt-2 mb-8 mx-auto text-left max-w-xs step-five text-dark leading-8 md:col-span-2 lg:col-start-3 lg:col-end-3 lg:row-start-4 lg:row-end-4">
-                            <span className="font-black pr-2 block text-center text-2xl text-dark mb-4">
+                        <p className="steps text-lg lg:text-xl mt-2 mb-8 mx-auto text-center md:text-left max-w-xs step-five text-dark leading-8 md:col-span-2 lg:col-start-3 lg:col-end-3 lg:row-start-4 lg:row-end-4">
+                            <span className="font-black pr-2 block text-center text-3xl lg:text-4xl text-dark mb-4">
                             05
                             </span>Write down the measurements as you go so you don&apos;t forget
                         </p>
