@@ -4,11 +4,11 @@ const Faq = ({ faq, index, toggleFaq }) => {
 
   return (
     <div
-        className="faq bg-lightest-green py-3 px-2 my-4 rounded shadow-md "
+        className="border-b border-b-light-green py-3 px-2 my-4 "
         key={index}
         onClick={() => toggleFaq(index)}
     >
-        <div className="faq-question text-dark font-bold text-base w-full cursor-pointer text-left relative transition duration-300 ease-in-out after:absolute after:top-0 after:right-0 after:w-6 after:h-6 after:transition-all">
+        <div className="faq-question text-dark font-bold text-base w-full cursor-pointer text-left relative transition duration-500 ease-in-out after:absolute after:top-0 after:right-0 after:w-6 after:h-6 after:transition-all">
             <h3 className="flex justify-between">
                 {faq.question}
                 <span className={faq.open ? "rotate-90" : "transform-none"}>

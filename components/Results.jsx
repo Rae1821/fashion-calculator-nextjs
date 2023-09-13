@@ -4,7 +4,7 @@ const Results = ({ bodyShape, name, mainCharacteristic, secondaryCharacteristic,
 
 
     return (
-    <div className="results-container w-full max-w-6xl mx-auto rounded-md flex items-center justify-around pt-12 pb-16">
+    <div className="results-container w-full max-w-6xl mx-auto rounded-md flex flex-col lg:flex-row items-center justify-around pt-12 pb-16">
       <div className="results-wrapper flex items-center justify-center mb-8 pt-12 px-2 lg:px-6 pb-16 rounded-md lg:w-1/2 ">
         <div className="results text-center">
             <h3 className="text-dark font-bold text-3xl mb-4">
@@ -35,20 +35,22 @@ const Results = ({ bodyShape, name, mainCharacteristic, secondaryCharacteristic,
             <p className="mt-4 text-left border-t-2 border-dotted border-light-green pt-6 font-sans tracking-wide leading-7">Want to learn more about your body shape and how to style it? Just click the Chat with AI button to ask Sophie the AI Stylist!</p>
 
             <div className="button-container mt-10 flex flex-col lg:flex-row justify-around">
-              <button
+            <button
                   onClick={handleStartOver}
-                  className="start-over-btn w-full lg:w-1/2 bg-light-green mt-5 mr-0 lg:mr-4 py-4 px-2 border-2 border-light-green rounded-md text-md uppercase cursor-pointer transition ease-out duration-300 hover:shadow-3xl hover:transition hover:ease-in hover:duration-300">
+                  className="start-over-btn w-full lg:w-1/2 mt-5 mr-0 lg:mr-4 py-4 px-2 border-2 border-light-green rounded-md text-md uppercase cursor-pointer transition ease-out duration-300 hover:shadow-3xl hover:transition hover:ease-in hover:duration-300">
                   Start Over
               </button>
               <button
                   onClick={handleShowChatbot}
-                  className="ai-btn border-2 border-light-green w-full lg:w-1/2 mt-5 py-4 px-2 lg:ml-4 rounded-md text-md uppercase cursor-pointer transition ease-out duration-300 hover:shadow-3xl hover:transition hover:ease-in hover:duration-300">
+                  className="ai-btn border-2 border-light-green bg-light-green w-full lg:w-1/2 mt-5 py-4 px-2 lg:ml-4 rounded-md text-md uppercase cursor-pointer transition ease-out duration-300 hover:shadow-3xl hover:transition hover:ease-in hover:duration-300">
                   Chat with AI
               </button>
+
+
             </div>
         </div>
       </div>
-      <div className="woman-img sm:hidden lg:block lg:w-1/3">
+      <div className="woman-img hidden lg:block lg:w-1/4">
         <Image
           src="/assets/images/woman-yellow-bathing-suit.svg"
           alt="woman in yellow bathing suit"

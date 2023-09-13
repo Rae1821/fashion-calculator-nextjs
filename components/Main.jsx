@@ -7,46 +7,44 @@ const Main = () => {
 
   return (
     <div>
-        <div className="hero flex flex-col lg:flex-row justify-between items-center h-screen max-w-6xl mx-auto pt-28">
-            <div className="z-10 relative hero--content w-3/4 flex flex-col text-left lg:max-w-lg">
-                <p className="pre--title text-tropicana uppercase text-xs font-sans pb-2">premiere fashion secrets</p>
-                <h1 className="title font-['Abril_Fatface'] font-bold text-4xl my-2 text-dark tracking-tight lg:text-6xl ">The Body Shape
-                    <span className="block pt-2">Calculator</span>
+        <div className="hero heroImage flex justify-center items-center h-screen">
+            <div className="max-w-3xl pt-24">
+                <h1 className="title text-center font-bold px-2 text-3xl md:text-4xl lg:text-5xl text-light tracking-tighter leading-tight">
+                Feel confident & beautiful without dieting or hitting the gym
                 </h1>
-                    <p className="description font-sans text-dark font-light leading-8 pt-6 md:max-w-md">
-                        If you want to look and feel better in your clothes, without going on a diet or hitting the gym, I&apos;m going to let you in on a little secret...
-                        <em>It&apos;s not about your weight, it&apos;s about your shape!</em>
-                        <br /><br />
+                    <p className="description text-center text-light font-light leading-relaxed mt-6 px-4 text-sm md:text-base">
                         Knowing your body shape is the first step to looking better in your clothes. No more feeling overwhelemed while shopping for clothes and getting dressed will be a breeze.
-                        Ready to get started?
                     </p>
-                    <Link
-                        href="#lets-go"
-                        className="uppercase py-4 px-4 bg-light-green mt-8 w-3/4 md:w-1/2 lg:w-2/3 rounded-md text-center transition ease-out duration-300 hover:shadow-3xl hover:transition hover:ease-in hover:duration-300 lg:text-lg"
-                    >
-                        Let's do this!
-                    </Link>
-             </div>
-             <div className="hidden md:block h-auto w-2/5 pt-8 ml-24">
-                <Image
-                    src="/assets/images/hero-img.png"
-                    alt="women with different body shapes"
-                    height={800}
-                    width={800}
-                />
+                    <div className="mt-14 flex items-center justify-center gap-x-6">
+                        <Link
+                            href="#lets-go"
+                            className="bg-light-green rounded px-4 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-lighter-green focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light-green"
+                        >
+                            Get started
+                        </Link>
+                        <Link
+                            href="#benefits"
+                            className="text-light hover:text-light-green"
+                            >
+                            Learn More <span aria-hidden="true">→</span>
+                        </Link>
+                    </div>
+
              </div>
         </div>
+
+
+
             {
                 //How it works section
             }
         <div id="benefits" className="works--container flex flex-col-reverse mt-16 mx-auto pt-6 px-6 md:w-3/4 lg:w-full lg:flex-row lg:items-center lg:justify-between lg:max-w-6xl lg:mt-24  lg:p-4">
             <div className="works-left hidden lg:block lg:w-1/3 lg:mr-0">
                 <Image
-                    src="/assets/images/woman-white-bathing-suit.svg"
-                    alt="woman in a teal bathing suit"
-                    width={200}
-                    height={400}
-
+                    src="/assets/images/woman-yellow-bathing-suit.svg"
+                    alt="woman in a white bathing suit"
+                    width={250}
+                    height={300}
                 />
             </div>
                 <div className="works-right mb-6 w-11/12">
@@ -67,7 +65,7 @@ const Main = () => {
                         <div className="perk max-w-lg mt-0 mb-5 md:max-w-xl md:mb-8 lg:p-2 lg:w-11/12">
                             <p className="pill bg-light-turq w-1/5 text-center rounded-xl text-light mb-5 uppercase text-xs py-1 lg:w-1/3 lg:px-4">Benefit</p>
                             <h3 className="font-bold mt-5 mb-2 lg:text-2xl">Clarity</h3>
-                            <p className="perk-description font-extralight leading-8 text-base">Knowing your shape clears up
+                            <p className="perk-description font-extralig 5ht leading-8 text-base">Knowing your shape clears up
                             all those frustrating moments when something looks good on
                             someone else but not on you. It is not you, it is your shape.</p>
                         </div>
@@ -94,17 +92,18 @@ const Main = () => {
             {
                 //Measuring tips
             }
-            <div id="tips" className="measuring-tips my-16 bg-gradient-to-br from-tropicana via-light-tropicana to-lightest-tropicana lg:p-8 lg:w-11/12 lg:mx-auto">
+            <div id="tips" className="measuring-tips my-16 bg-gradient-to-r from-[#fd746c] to-[#ff9068] lg:p-8  lg:mx-auto">
                 <div className="measuring-tips-inner flex flex-col items-center justify-between p-4 md:grid md:grid-cols-2 md:grid-rows-4 lg:grid-cols-[1fr_300px_400px_300px_1fr] lg:gap-8 lg:pt-4 lg:pb-12">
                     <h2 className="font-sans font-bold text-dark text-2xl max-w-lg pt-8 pb-4 text-center md:col-span-2 md:row-span-1 md:mx-auto lg:col-start-3 lg:col-end-4 lg:text-4xl lg:font-black lg:tracking-wide">Measuring Tips
                         <span className="block text-base mt-2 mb-4 font-medium ">Tips to get the most accurate result</span>
                     </h2>
                     <div className="max-w-1/2 md:col-span-2 md:row-span-1 md:mx-auto lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4 lg:max-w-full">
+
                         <Image
-                            src="/assets/images/woman-teal-bathing-suit.svg"
-                            alt="woman in a white bathing suit"
+                            src="/assets/images/woman-white-bathing-suit.svg"
+                            alt="woman in a teal bathing suit"
                             width={200}
-                            height={300}
+                            height={400}
                         />
                     </div>
 

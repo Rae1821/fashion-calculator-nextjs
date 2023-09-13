@@ -8,7 +8,7 @@ import Main from '@/components/Main';
 import Calculator from '@/components/Calculator';
 import data from '@/bodyShapeData';
 import Results from '@/components/Results';
-//import Nav from '@components/Nav';
+import Nav from '@components/Nav';
 
 
 export default function Home() {
@@ -154,7 +154,7 @@ function handleShowChatbot () {
 
   return (
     <div>
-        {/* <Nav /> */}
+        <Nav />
         <Main />
 
         {
@@ -185,7 +185,7 @@ function handleShowChatbot () {
                 <button
                 id="lets-go"
                     onClick={toggleShowCalculator}
-                    className="orange-btn flex justify-between text-base bg-tropicana cursor-pointer rounded-md px-8 py-4 uppercase tracking-wider transition ease-out duration-300 hover:shadow-3xl hover:transition hover:ease-in hover:duration-300 lg:text-lg"
+                    className="orange-btn flex justify-between text-base bg-light-green cursor-pointer rounded-md px-8 py-4 uppercase tracking-wider transition ease-out duration-300 hover:shadow-3xl hover:transition hover:ease-in hover:duration-300 lg:text-lg"
                 >
                     Let's Goooo
                     <span className='pl-4'>
@@ -213,7 +213,7 @@ function handleShowChatbot () {
             /* AI Stylist Chatbot */
         }
         {showChatbot ?
-            <section className="chatbot-container flex justify-center content-center">
+            <section id="ai" className="chatbot-container flex justify-center content-center">
                 <div className="chatbot-wrapper w-11/12 md:w-2/3 lg:w-1/2 h-auto border-2 border-black rounded shadow-3xl mt-4 mb-28 p-5">
                     <div className="chatbot-header border-b-2 border-b-black border-dotted">
                         <h1 className="font-sans text-lg lg:text-xl font-bold pb-2 flex justify-between">Sophie The AI Stylist
@@ -238,12 +238,12 @@ function handleShowChatbot () {
 
                         <form onSubmit={handleSubmit} className="flex justify-between mt-32">
                             <input
-                                className="w-full lg:max-w-md border border-light-turq rounded rounded-tr-none rounded-br-none mx-auto shadow-lg p-2"
+                                className="w-full lg:max-w-md border border-light-green rounded rounded-tr-none rounded-br-none mx-auto shadow-lg p-2"
                                 value={input}
                                 placeholder="Say something..."
                                 onChange={handleInputChange}
                             />
-                            <button type="submit" className="bg-light-turq rounded-md rounded-tl-none rounded-bl-none px-4 shadow-lg text-white">Send</button>
+                            <button type="submit" className="bg-light-green rounded-md rounded-tl-none rounded-bl-none px-4 shadow-lg text-white">Send</button>
                         </form>
                     </div>
                 </div>
@@ -252,7 +252,7 @@ function handleShowChatbot () {
         {/* Footer */}
         <footer className="bg-dark h-10 pt-8 pb-12 text-center text-light flex flex-col justify-center">
             <p className="pt-8 text-sm">Copyright © 2023 | Created by
-                <a href="https://www.rachelandersondooley.com" alt="portfolio site link" target="_blank" className="text-light-turq pl-2">
+                <a href="https://www.rachelandersondooley.com" alt="portfolio site link" target="_blank" className="text-light-green pl-2">
                     Rachel Dooley
                 </a>
             </p>
