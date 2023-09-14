@@ -18,7 +18,7 @@ const Calculator = ({ handleFormSubmit, handleChange, formData }) => {
                             placeholder="Shoulders"
                             onChange={handleChange}
                             required
-                            className="w-11/12 p-4 rounded-lg text-center font-semibold text-base shadow-inner focus:ring-2 focus:ring-light-turq"
+                            className="w-11/12 p-4 rounded-lg text-center font-semibold text-base shadow-inner focus:outline-none focus:ring focus:ring-light-green"
                             />
                     </div>
                     <div className="form--element flex items-center justify-center py-2 px-6">
@@ -30,7 +30,7 @@ const Calculator = ({ handleFormSubmit, handleChange, formData }) => {
                             placeholder="Waist"
                             onChange={handleChange}
                             required
-                            className="w-11/12 p-4 rounded-lg text-center font-semibold text-base shadow-inner"
+                            className="w-11/12 p-4 rounded-lg text-center font-semibold text-base shadow-inner focus:outline-none focus:ring focus:ring-light-green"
                             />
                     </div>
                     <div className="form--element flex items-center justify-center py-2 px-6">
@@ -42,7 +42,7 @@ const Calculator = ({ handleFormSubmit, handleChange, formData }) => {
                             placeholder="Hips"
                             onChange={handleChange}
                             required
-                            className="w-11/12 p-4 rounded-lg text-center font-semibold text-base shadow-inner"
+                            className="w-11/12 p-4 rounded-lg text-center font-semibold text-base shadow-inner focus:outline-none focus:ring focus:ring-light-green"
                             />
                     </div>
                     <button

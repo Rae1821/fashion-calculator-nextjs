@@ -1,34 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+# The Body Shape Calculator
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+This is a passion project that I decided to make because I love to help other women learn how to find their own style and the first step is to know your body shape! I love finding a way to combine my two passions, tech and fashion.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Table of contents
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- [Overview](#overview)
+  - [The concept](#the-concept)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Author](#author)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Overview
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### The concept
 
-## Deploy on Vercel
+The project started as a way to provide an easy calculator to users to find their body shape. I also knew I wanted to add a section explaining some of the benefits of knowing your shape, how to measure yourself correclty, and also some FAQ's. After putting all of this together I decided it would be so fun to include an AI chatbot to help out with any styling questions the users might have.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Screenshot
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![](./assets/images/desktop-shot.png)
+
+
+### Links
+
+- Solution URL: [Add solution URL here](https://github.com/Rae1821/fashion-calculator-nextjs)
+
+
+## My process
+
+
+
+
+## Author
+
+- Website - [Rachel Dooley](https://www.rachelandersondooley.com)
+- Twitter - [@RachelADooley](https://www.twitter.com/RachelADooley)
+
+
+
+

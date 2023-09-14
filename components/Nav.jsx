@@ -12,7 +12,7 @@ const Nav = () => {
             <div className="flex justify-between items-center">
                 {/*Logo*/}
                 <Link href="/">
-                    <h2 className="text-lg text-light font-bold">Body Shape Calculator</h2>
+                    <h2 className="text-lg text-light font-bold hover:text-light-green">The Body <span className="font-display text-2xl">Shape </span>Calculator</h2>
                 </Link>
                 {/*Hamburger Button*/}
                 <div className="md:hidden">
@@ -45,11 +45,11 @@ const Nav = () => {
                             calculator
                         </Link>
                     </li>
-                    <li className="pb-6 md:pb-3 text-lg text-light py-2 md:px-6 text-center border-b-2 md:border-b-0 border-light-green hover:text-black md:hover:text-light-green hover:bg-light-green md:hover:bg-transparent">
+                    {/* <li className="pb-6 md:pb-3 text-lg text-light py-2 md:px-6 text-center border-b-2 md:border-b-0 border-light-green hover:text-black md:hover:text-light-green hover:bg-light-green md:hover:bg-transparent">
                         <Link href="#ai" onClick={() => setNavbar(!navbar)}>
                             ask sophie
                         </Link>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
             {/* <Link

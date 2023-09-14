@@ -213,8 +213,8 @@ function handleShowChatbot () {
             /* AI Stylist Chatbot */
         }
         {showChatbot ?
-            <section id="ai" className="chatbot-container flex justify-center content-center">
-                <div className="chatbot-wrapper w-11/12 md:w-2/3 lg:w-1/2 h-auto border-2 border-black rounded shadow-3xl mt-4 mb-28 p-5">
+            <section id="ai" className="chatbot-container flex justify-center content-center bg-black bg-opacity-25 backdrop-blur fixed inset-0 w-full h-full">
+                <div className="chatbot-wrapper w-11/12 md:w-2/3 lg:w-1/2 h-full overflow-y-auto bg-light border-2 border-dark rounded mt-4 mb-28 p-5">
                     <div className="chatbot-header border-b-2 border-b-black border-dotted">
                         <h1 className="font-sans text-lg lg:text-xl font-bold pb-2 flex justify-between">Sophie The AI Stylist
                             <span className="cursor-pointer">
@@ -227,18 +227,17 @@ function handleShowChatbot () {
                         </h1>
                     </div>
 
-                    <div className="chatbot-conversation mx-auto w-full max-w-lg py-8 flex flex-col stretch">
-                        <p className="bg-user/40 text-black mb-6 px-2 py-2 rounded-b-lg rounded-tr-lg">AI: Hello, what can I help you style today?</p>
+                    <div className="chatbot-conversation mx-auto w-full max-w-lg py-8 flex flex-col">
+                        <p className="bg-user/40 text-black mb-6 px-2 py-2 rounded-b-lg rounded-tr-lg relative">AI: Hello, what can I help you style today?</p>
                         {messages.map(m => (
                             <div key={m.id} className={m.role === 'user' ? 'bg-assistant/80 text-black mb-6 text-right px-2 py-2 rounded-b-lg rounded-tl-lg' : 'bg-user/40 text-black mb-6 px-2 py-2 rounded-b-lg rounded-tr-lg whitespace-pre-wrap'} >
                                 {m.role === 'user' ? 'User: ' : 'AI: ' }
                                 {m.content}
                             </div>
                         ))}
-
-                        <form onSubmit={handleSubmit} className="flex justify-between mt-32">
+                        <form onSubmit={handleSubmit} className="flex justify-between mt-10">
                             <input
-                                className="w-full lg:max-w-md border border-light-green rounded rounded-tr-none rounded-br-none mx-auto shadow-lg p-2"
+                                className="w-full lg:max-w-md border border-light-green rounded rounded-tr-none rounded-br-none mx-auto shadow-lg p-2 focus:outline-none"
                                 value={input}
                                 placeholder="Say something..."
                                 onChange={handleInputChange}

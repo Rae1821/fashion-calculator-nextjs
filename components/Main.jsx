@@ -54,7 +54,7 @@ const Main = () => {
                     <div className="perks-container text-left lg:grid lg:grid-cols-2 lg:grid-rows-2 lg:gap-8 lg:p-4">
 
                         <div className="perk max-w-md mt-0 mb-5 md:max-w-xl md:mb-8 lg:p-2 lg:w-11/12">
-                            <p className="pill bg-light-turq w-1/5 text-center rounded-xl text-light mb-5 uppercase text-xs py-1 lg:w-1/3 lg:px-4">Process</p>
+                            <p className="pill bg-light-green w-1/5 text-center rounded-xl text-light mb-5 uppercase text-xs py-1 lg:w-1/3 lg:px-4">Process</p>
                             <h3 className="font-bold text-lg mt-5 mb-2 lg:text-2xl">Easy Peasy</h3>
                             <p className="perk-description font-extralight leading-8 text-base">With just 3 measurements -
                             your shoulders, your waist, and your hips -
@@ -63,15 +63,15 @@ const Main = () => {
                         </div>
 
                         <div className="perk max-w-lg mt-0 mb-5 md:max-w-xl md:mb-8 lg:p-2 lg:w-11/12">
-                            <p className="pill bg-light-turq w-1/5 text-center rounded-xl text-light mb-5 uppercase text-xs py-1 lg:w-1/3 lg:px-4">Benefit</p>
+                            <p className="pill bg-light-green w-1/5 text-center rounded-xl text-light mb-5 uppercase text-xs py-1 lg:w-1/3 lg:px-4">Benefit</p>
                             <h3 className="font-bold mt-5 mb-2 lg:text-2xl">Clarity</h3>
-                            <p className="perk-description font-extralig 5ht leading-8 text-base">Knowing your shape clears up
+                            <p className="perk-description font-extralight leading-8 text-base">Knowing your shape clears up
                             all those frustrating moments when something looks good on
                             someone else but not on you. It is not you, it is your shape.</p>
                         </div>
 
                         <div className="perk max-w-lg mt-0 mb-5 md:max-w-xl md:mb-8 lg:p-2 lg:w-11/12">
-                            <p className="pill bg-light-turq w-1/5 text-center rounded-xl text-light mb-5 uppercase text-xs py-1 lg:w-1/3 lg:px-4">Benefit</p>
+                            <p className="pill bg-light-green w-1/5 text-center rounded-xl text-light mb-5 uppercase text-xs py-1 lg:w-1/3 lg:px-4">Benefit</p>
                             <h3 className="font-bold text-lg mt-5 mb-2 lg:text-2xl">Body Positivity</h3>
                             <p className="perk-description font-extralight leading-8 text-base">Your body is not just a bunch of
                             individual parts you may or may not like. It’s a beautiful shape
@@ -79,7 +79,7 @@ const Main = () => {
                         </div>
 
                         <div className="perk max-w-lg mt-0 mb-5 md:max-w-xl md:mb-8 lg:p-2 lg:w-11/12">
-                            <p className="pill bg-light-turq w-1/5 text-center rounded-xl text-light mb-5 uppercase text-xs py-1 lg:w-1/3 lg:px-4">Benefit</p>
+                            <p className="pill bg-light-green w-1/5 text-center rounded-xl text-light mb-5 uppercase text-xs py-1 lg:w-1/3 lg:px-4">Benefit</p>
                             <h3 className="font-bold text-lg mt-5 mb-2 lg:text-2xl">Shopping Is Fun</h3>
                             <p className="perk-description font-extralight leading-8 text-base">Imagine a world where you actually
                             wear, and love, all the clothes you buy so they no longer sit in
