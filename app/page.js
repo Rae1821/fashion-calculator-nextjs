@@ -1,6 +1,5 @@
 "use client"
 
-import Image from 'next/image';
 import { useState } from 'react';
 import { useChat } from 'ai/react';
 import Faq from '@/components/Faq'
