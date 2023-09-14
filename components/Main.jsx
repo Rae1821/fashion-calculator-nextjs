@@ -137,9 +137,7 @@ const Main = () => {
                             </span>Write down the measurements as you go so you don&apos;t forget
                         </p>
                 </div>
-
             </div>
-
 
             {
                 //Testimonials
@@ -198,7 +196,6 @@ const Main = () => {
                     </div>
                 </div>
             </div>
-
     </div>
   )
 }

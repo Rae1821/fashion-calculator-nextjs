@@ -41,45 +41,13 @@ const Nav = () => {
                         </Link>
                     </li>
                     <li className="pb-6 md:pb-3 text-lg text-light py-2 md:px-6 text-center border-b-2 md:border-b-0 border-light-green hover:text-black md:hover:text-light-green hover:bg-light-green md:hover:bg-transparent">
-                        <Link href="#calculator" onClick={() => setNavbar(!navbar)}>
-                            calculator
+                        <Link href="#lets-go" onClick={() => setNavbar(!navbar)}>
+                            get started
                         </Link>
                     </li>
-                    {/* <li className="pb-6 md:pb-3 text-lg text-light py-2 md:px-6 text-center border-b-2 md:border-b-0 border-light-green hover:text-black md:hover:text-light-green hover:bg-light-green md:hover:bg-transparent">
-                        <Link href="#ai" onClick={() => setNavbar(!navbar)}>
-                            ask sophie
-                        </Link>
-                    </li> */}
                 </ul>
             </div>
-            {/* <Link
-                href="#benefits"
-                className="uppercase text-sm font-sans text-light"
-            >
-                Benefits
-            </Link>
-            <Link
-                href="#tips"
-                className="uppercase text-sm font-sans text-light"
-            >
-                How To Measure
-            </Link>
-            <Link
-                href="#lets-go"
-                className="uppercase text-sm font-sans text-light"
-            >
-                Calculator
-            </Link>
-            <Link
-                href="#lets-go"
-                className="uppercase bg-light-green px-4 py-2 rounded-full text-sm font-sans"
-            >
-                Ask Sophie
-            </Link> */}
         </nav>
-
-
-
     </div>
   )
 }
