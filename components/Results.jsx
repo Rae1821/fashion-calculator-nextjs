@@ -35,18 +35,16 @@ const Results = ({ bodyShape, name, mainCharacteristic, secondaryCharacteristic,
             <p className="mt-4 text-left border-t-2 border-dotted border-light-green pt-6 font-sans tracking-wide leading-7">Want to learn more about your body shape and how to style it? Just click the Chat with AI button to ask Sophie the AI Stylist!</p>
 
             <div className="button-container mt-10 flex flex-col lg:flex-row justify-around">
-            <button
-                  onClick={handleStartOver}
-                  className="start-over-btn w-full lg:w-1/2 mt-5 mr-0 lg:mr-4 py-4 px-2 border-2 border-light-green rounded-md text-md uppercase cursor-pointer transition ease-out duration-300 hover:shadow-3xl hover:transition hover:ease-in hover:duration-300">
-                  Start Over
+              <button
+                onClick={handleShowChatbot}
+                className="ai-btn border-2 border-light-green bg-light-green w-full lg:w-1/2 mt-5 py-4 px-2 lg:ml-4 rounded-md text-md uppercase cursor-pointer transition ease-out duration-300 hover:shadow-3xl hover:transition hover:ease-in hover:duration-300">
+                Chat with AI
               </button>
               <button
-                  onClick={handleShowChatbot}
-                  className="ai-btn border-2 border-light-green bg-light-green w-full lg:w-1/2 mt-5 py-4 px-2 lg:ml-4 rounded-md text-md uppercase cursor-pointer transition ease-out duration-300 hover:shadow-3xl hover:transition hover:ease-in hover:duration-300">
-                  Chat with AI
+                onClick={handleStartOver}
+                className="start-over-btn w-full lg:w-1/2 mt-5 mr-0 lg:mr-4 py-4 px-2 border-2 border-light-green rounded-md text-md uppercase cursor-pointer transition ease-out duration-300 hover:shadow-3xl hover:transition hover:ease-in hover:duration-300">
+                Start Over
               </button>
-
-
             </div>
         </div>
       </div>
