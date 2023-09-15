@@ -12,7 +12,7 @@ const Nav = () => {
             <div className="flex justify-between items-center">
                 {/*Logo*/}
                 <Link href="/">
-                    <h2 className="text-lg text-light font-bold hover:text-light-green">The Body <span className="font-display text-2xl">Shape </span>Calculator</h2>
+                    <h2 className="text-lg text-light font-bold">The Body <span className="font-display text-2xl">Shape </span>Calculator</h2>
                 </Link>
                 {/*Hamburger Button*/}
                 <div className="md:hidden">

@@ -37,12 +37,12 @@ const Results = ({ bodyShape, name, mainCharacteristic, secondaryCharacteristic,
             <div className="button-container mt-10 flex flex-col lg:flex-row justify-around">
               <button
                 onClick={handleShowChatbot}
-                className="ai-btn border-2 border-light-green bg-light-green w-full lg:w-1/2 mt-5 py-4 px-2 lg:ml-4 rounded-md text-md uppercase cursor-pointer transition ease-out duration-300 hover:shadow-3xl hover:transition hover:ease-in hover:duration-300">
+                className="ai-btn border-2 border-light-green bg-light-green w-full lg:w-1/2 mt-5 py-4 px-2 lg:mr-4 rounded-md text-md uppercase cursor-pointer transition ease-out duration-300 hover:shadow-3xl hover:transition hover:ease-in hover:duration-300">
                 Chat with AI
               </button>
               <button
                 onClick={handleStartOver}
-                className="start-over-btn w-full lg:w-1/2 mt-5 mr-0 lg:mr-4 py-4 px-2 border-2 border-light-green rounded-md text-md uppercase cursor-pointer transition ease-out duration-300 hover:shadow-3xl hover:transition hover:ease-in hover:duration-300">
+                className="start-over-btn w-full lg:w-1/2 mt-5 mr-0 lg:ml-4 py-4 px-2 border-2 border-light-green rounded-md text-md uppercase cursor-pointer transition ease-out duration-300 hover:shadow-3xl hover:transition hover:ease-in hover:duration-300">
                 Start Over
               </button>
             </div>

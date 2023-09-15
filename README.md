@@ -10,10 +10,8 @@ This is a passion project that I decided to make because I love to help other wo
   - [The concept](#the-concept)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
-
-- [Author](#author)
+  - [Author](#author)
 
 
 
@@ -30,13 +28,12 @@ The project started as a way to provide an easy calculator to users to find thei
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Rae1821/fashion-calculator-nextjs)
+- Solution URL: [github.com/Rae1821/fashion-calculator-nextjs](https://github.com/Rae1821/fashion-calculator-nextjs)
+- Live Site URL: [fashion-calculator-nextjs.vercel.app](https://fashion-calculator-nextjs.vercel.app)
 
+## Built with
 
-## My process
-
-
-
+The first time I built this I used React with Vite and deployed to Netlify. However, I hit a wall when trying to hide my API key using Netlify's serverless functions so I decided to switch to Nextjs. It took me a minute to figure out Nextjs but I love how intuative it is! I really enjoyed the process of using Nextjs to build my React app along with TailwindCSS. Enjoy!
 
 ## Author
 

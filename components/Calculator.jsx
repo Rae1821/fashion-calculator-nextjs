@@ -15,7 +15,7 @@ const Calculator = ({ handleFormSubmit, handleChange, formData }) => {
                             value={formData.shoulders}
                             type="text"
                             name="shoulders"
-                            placeholder="Shoulders"
+                            placeholder="Shoulders (inches)"
                             onChange={handleChange}
                             required
                             className="w-11/12 p-4 rounded-lg text-center font-semibold text-base shadow-inner focus:outline-none focus:ring focus:ring-light-green"
@@ -27,27 +27,28 @@ const Calculator = ({ handleFormSubmit, handleChange, formData }) => {
                             value={formData.waist}
                             type="text"
                             name="waist"
-                            placeholder="Waist"
+                            placeholder="Waist (inches)"
                             onChange={handleChange}
                             required
                             className="w-11/12 p-4 rounded-lg text-center font-semibold text-base shadow-inner focus:outline-none focus:ring focus:ring-light-green"
                             />
                     </div>
                     <div className="form--element flex items-center justify-center py-2 px-6">
-                    <label htmlFor="hips"></label>
+                        <label htmlFor="hips"className="font-semibold"></label>
                         <input
                             value={formData.hips}
                             type="text"
                             name="hips"
-                            placeholder="Hips"
+                            placeholder="Hips (inches)"
                             onChange={handleChange}
                             required
                             className="w-11/12 p-4 rounded-lg text-center font-semibold text-base shadow-inner focus:outline-none focus:ring focus:ring-light-green"
                             />
                     </div>
                     <button
-                    className="calculate-btn mt-12 w-full bg-light-green text-light border-none py-5 px-8 rounded-lg tracking-wider text-xl uppercase cursor-pointer transition ease-out duration-300 hover:shadow-3xl hover:transition hover:ease-in hover:duration-300"
-                    >Calculate
+                        className="calculate-btn mt-12 w-full bg-light-green text-light border-none py-5 px-8 rounded-lg tracking-wider text-xl uppercase cursor-pointer transition ease-out duration-300 hover:shadow-3xl hover:transition hover:ease-in hover:duration-300"
+                        >
+                        Calculate
                     </button>
             </form>
 

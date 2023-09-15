@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 
 
 const Main = () => {
@@ -9,16 +8,16 @@ const Main = () => {
     <div>
         <div className="hero heroImage flex justify-center items-center h-screen">
             <div className="max-w-3xl pt-24">
-                <h1 className="title text-center font-bold px-2 text-3xl md:text-4xl lg:text-5xl text-light tracking-tighter leading-tight">
+                <h1 className="title text-center font-bold px-2 text-3xl md:text-4xl lg:text-5xl text-light tracking-tighter leading-tight text-shadow-lg shadow-dark">
                 Feel confident & beautiful without dieting or hitting the gym
                 </h1>
-                    <p className="description text-center text-light font-light leading-relaxed mt-6 px-4 text-sm md:text-base">
+                    <p className="description text-center text-light font-light leading-relaxed mt-6 px-4 text-sm md:text-base text-shadow-sm shadow-dark">
                         Knowing your body shape is the first step to looking better in your clothes. No more feeling overwhelemed while shopping for clothes and getting dressed will be a breeze.
                     </p>
                     <div className="mt-14 flex items-center justify-center gap-x-6">
                         <Link
                             href="#lets-go"
-                            className="bg-light-green rounded px-4 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-lighter-green focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light-green"
+                            className="bg-light-green rounded px-4 py-2.5 text-sm font-semibold text-black shadow-sm hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light-green "
                         >
                             Get started
                         </Link>
@@ -29,15 +28,12 @@ const Main = () => {
                             Learn More <span aria-hidden="true">→</span>
                         </Link>
                     </div>
-
              </div>
         </div>
 
-
-
-            {
-                //How it works section
-            }
+        {
+            //How it works section
+        }
         <div id="benefits" className="works--container flex flex-col-reverse mt-16 mx-auto pt-6 px-6 md:w-3/4 lg:w-full lg:flex-row lg:items-center lg:justify-between lg:max-w-6xl lg:mt-24  lg:p-4">
             <div className="works-left hidden lg:block lg:w-1/3 lg:mr-0">
                 <Image
@@ -113,28 +109,28 @@ const Main = () => {
                             </span>Look into a full length mirror or get someone to assist you
                         </p>
 
-                        <p className="steps text-lg lg:text-xl mt-2 mb-8 mx-auto text-center md:text-left max-w-xs step-two text-dark leading-8 lg:col-start-2 lg:col-end-2 lg:row-start-3 lg:row-end-3">
-                            <span className="font-black pr-2 block text-center text-3xl lg:4xl text-dark mb-4">
-                            02
-                            </span>If you are between numbers round up to the nearest whole number
-                        </p>
-
                         <p className="steps text-lg lg:text-xl mt-2 mb-8 mx-auto text-center md:text-left max-w-xs step-three text-dark leading-8 lg:col-start-4 lg:col-end-4 lg:row-start-2 lg:row-end-3">
                             <span className="font-black pr-2 block text-center text-3xl lg:text-4xl text-dark mb-4">
+                            02
+                            </span>Use a measuring tape with inches and wrap around the fullest part of each area
+                        </p>
+
+                        <p className="steps text-lg lg:text-xl mt-2 mb-8 mx-auto text-center md:text-left max-w-xs step-two text-dark leading-8 lg:col-start-2 lg:col-end-2 lg:row-start-3 lg:row-end-3">
+                            <span className="font-black pr-2 block text-center text-3xl lg:4xl text-dark mb-4">
                             03
-                            </span>Wrap the tape measure around the fullest part of each area
+                            </span>If you are between numbers round up to the nearest whole number in inches
                         </p>
 
                         <p className="steps text-lg lg:text-xl mt-2 mb-8 mx-auto text-center md:text-left max-w-xs step-four text-dark leading-8 lg:col-start-4 lg:col-end-4 lg:row-start-3 lg:row-end-3">
                             <span className="font-black pr-2 block text-center text-3xl lg:text-4xl text-dark mb-4">
                             04
-                            </span>Keep measuring tape horizontal to the floor
+                            </span>Keep measuring tape horizontal to the floor for an accurate measurement
                         </p>
 
                         <p className="steps text-lg lg:text-xl mt-2 mb-8 mx-auto text-center md:text-left max-w-xs step-five text-dark leading-8 md:col-span-2 lg:col-start-3 lg:col-end-3 lg:row-start-4 lg:row-end-4">
                             <span className="font-black pr-2 block text-center text-3xl lg:text-4xl text-dark mb-4">
                             05
-                            </span>Write down the measurements as you go so you don&apos;t forget
+                            </span>Write down the measurements in inches as you go so you don&apos;t forget
                         </p>
                 </div>
             </div>
@@ -161,7 +157,7 @@ const Main = () => {
                         I found out what mine was, I was able to choose the items that were
                         perfect for my shape!&quot;
                         </p>
-                        <p className="author text-center font-bold mt-8 text-sm">Betty Sue</p>
+                        <p className="author text-center font-bold mt-8 text-sm text-light-green">Betty Sue</p>
                     </div>
 
                     <div className="testimonial w-11/12 p-8 border border-light shadow-lg my-4 mx-8 lg:w-1/3 lg:mx-0 lg:my-0">
@@ -176,7 +172,7 @@ const Main = () => {
                         admit, I was skeptical about yet another thing that promises to
                         improve your style but this knowledge is priceless!&quot;
                         </p>
-                        <p className="author text-center font-bold mt-8 text-sm">Tiffany White</p>
+                        <p className="author text-center font-bold mt-8 text-sm text-light-green">Tiffany White</p>
                     </div>
 
                     <div className="testimonial w-11/12 p-8 border border-light shadow-lg lg:w-1/3 lg:ml-4">
@@ -192,7 +188,7 @@ const Main = () => {
                             there is such a helpful chatbot ready to answer any potential styling
                             questions you might have!&quot;
                         </p>
-                        <p className="author text-center font-bold mt-8 text-sm">Rebecca Johnson</p>
+                        <p className="author text-center font-bold mt-8 text-sm text-light-green">Rebecca Johnson</p>
                     </div>
                 </div>
             </div>

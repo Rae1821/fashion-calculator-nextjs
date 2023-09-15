@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -23,17 +25,32 @@ module.exports = {
       user: 'rgba(var(--color-user), <alpha-value>)',
     },
     extend: {
+      textShadow: {
+        sm: '0 1px 2px var(--tw-shadow-color)',
+        lg: '2px 2px 4px var(--tw-shadow-color)',
+      },
       boxShadow: {
         '3xl': '10px 10px #2B283A',
         '4xl': '10px 10px #40B6AD',
       },
-      boxShadow: {
-        '3xl': '10px 10px rgba(0,0,0,1)',
-      },
+      // boxShadow: {
+      //   '3xl': '10px 10px rgba(0,0,0,1)',
+      // },
       fontFamily: {
         display: ['var(--font-sacramento)'],
       }
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          'text-shadow': (value) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme('textShadow')}
+      )
+    }),
+  ],
 }

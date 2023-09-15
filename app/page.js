@@ -8,6 +8,7 @@ import Calculator from '@/components/Calculator';
 import data from '@/bodyShapeData';
 import Results from '@/components/Results';
 import Nav from '@components/Nav';
+import ScrollButton from '@components/ScrollButton';
 
 
 export default function Home() {
@@ -20,8 +21,13 @@ const [faqs, setFaqs] = useState([
         open: false
     },
     {
+        question: 'What unit of measurement should I use?',
+        answer: 'This calculator works off inches so be sure to use a measuring tape with inches on it.',
+        open: false
+    },
+    {
         question: 'How do I use this information?',
-        answer: 'Once you know your shape you can learn what clothes are flattering for your shape and what will look the best on you.',
+        answer: 'Once you know your body shape you can learn what clothes are flattering for your shape and what will look the best on you. Be sure to ask Sophie the AI Stylist for some tips!',
         open: false
     },
     {
@@ -33,8 +39,9 @@ const [faqs, setFaqs] = useState([
         question: 'What if I need help?',
         answer: 'Feel free to reach out to me if you have any questions.',
         open: false
-    }
-])
+    },
+
+]);
 
 //Chatbot
 const { messages, input, handleInputChange, handleSubmit } = useChat();
@@ -159,9 +166,9 @@ function handleShowChatbot () {
         {
             /* Faq Section */
         }
-        <div className="faqs-container mt-40">
+        <div className="faqs-container mt-32">
             <h2 className="font-bold text-3xl text-dark mb-4 text-center lg:text-4xl lg:font-black lg:tracking-wide">FAQs</h2>
-            <span className="text-base block mt-2 text-center">Answers to common questions</span>
+            <span className="text-base block mt-2 text-center text-dark">Answers to common questions</span>
             <div className="faqs w-full max-w-3xl mx-auto p-6">
                 {faqs.map((faq, i) => (
                     <Faq
@@ -177,7 +184,7 @@ function handleShowChatbot () {
         {
             /* Call to Action */
         }
-        <div className="get-started mt-12 mb-12">
+        <div className="get-started mt-24 mb-12">
             <h2 className="text-3xl lg:text-3xl text-center font-extrabold">Ready to get started?</h2>
 
             <div className="btn-container flex justify-center pt-8 pb-12">
@@ -186,7 +193,7 @@ function handleShowChatbot () {
                     onClick={toggleShowCalculator}
                     className="orange-btn flex justify-between text-base bg-light-green cursor-pointer rounded-md px-8 py-4 uppercase tracking-wider transition ease-out duration-300 hover:shadow-3xl hover:transition hover:ease-in hover:duration-300 lg:text-lg"
                 >
-                    Let's Goooo
+                    Let's Gooo
                     <span className='pl-4'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 animate-bounce">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75" />
@@ -241,11 +248,15 @@ function handleShowChatbot () {
                                 placeholder="Say something..."
                                 onChange={handleInputChange}
                             />
-                            <button type="submit" className="bg-light-green rounded-md rounded-tl-none rounded-bl-none px-4 shadow-lg text-white">Send</button>
+                            <button type="submit" className="bg-light-green rounded-md rounded-tl-none rounded-bl-none px-4 shadow-lg text-white hover:opacity-50">Send</button>
                         </form>
                     </div>
                 </div>
             </section> : ''}
+
+        {/* Back To Top Button */}
+        <ScrollButton />
+
 
         {/* Footer */}
         <footer className="bg-dark h-10 pt-8 pb-12 text-center text-light flex flex-col justify-center">
