@@ -33,7 +33,7 @@ const ScrollButton = () => {
     <button>
         <ArrowUpCircleIcon
             onClick={scrollToTop}
-            className={visible ? 'inline h-12 w-12 text-dark bg-white rounded-full fixed right-4 bottom-24' : 'none'} />
+            className={visible ? 'inline h-12 w-12 text-dark bg-white rounded-full fixed right-4 bottom-24 shadow-sm' : 'none'} />
     </button>
   )
 };

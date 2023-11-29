@@ -1,11 +1,11 @@
 import Image from 'next/image'
-import { ChevronRightIcon } from '@heroicons/react/24/solid'
+import { ChevronDoubleRightIcon } from '@heroicons/react/20/solid'
 
 const Faq = ({ faq, index, toggleFaq }) => {
 
   return (
     <div
-        className="shadow rounded bg-light bg-opacity-25 py-3 px-2 my-4 "
+        className="shadow rounded bg-[#e5e7eb] bg-opacity-25 py-3 px-2 my-4 "
         key={index}
         onClick={() => toggleFaq(index)}
     >
@@ -13,11 +13,11 @@ const Faq = ({ faq, index, toggleFaq }) => {
             <h3 className="flex justify-between">
                 {faq.question}
                 <span className={faq.open ? "rotate-90" : "transform-none"}>
-                    <ChevronRightIcon className="w-6 h-6 text-dark" />
+                    <ChevronDoubleRightIcon className="w-6 h-6 text-turq" />
                 </span>
             </h3>
         </div>
-        <div className={!faq.open ? "faq-answer opacity-0 max-h-0 overflow-y-hidden transition-all duration-300 ease-in text-left" : "max-h-52 opacity-100 transition-all duration-300 ease-out py-4 px-4 text-left text md"}>
+        <div className={!faq.open ? "faq-answer opacity-0 max-h-0 overflow-y-hidden transition-all duration-300 ease-in text-left" : "max-h-52 opacity-100 transition-all duration-300 ease-out py-4 px-4 text-left text-md"}>
             <p>{faq.answer}</p>
         </div>
     </div>

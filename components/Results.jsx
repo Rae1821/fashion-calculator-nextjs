@@ -11,24 +11,24 @@ const Results = ({ bodyShape, name, mainCharacteristic, secondaryCharacteristic,
                 You have a {bodyShape}
             </h3>
             <p className="py-4 text-lg">{name} shape characteristics include:</p>
-            <ul className="characteristics text-sm pl-8 mb-8">
-                <li className="text-left leading-8 flex italic py-2 mx-auto">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-6 font-bold">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+            <ul className="characteristics text-sm mb-8">
+                <li className="leading-8 flex justify-center items-center italic py-2 mx-auto">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#F27052" className="w-5 h-5">
+                  <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
                   </svg>
                 {mainCharacteristic}
                 </li>
-                <li className="text-left leading-8 flex italic py-2 mx-auto">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-6">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                      </svg>
-                {secondaryCharacteristic}
+                <li className="text-left leading-8 flex justify-center items-center italic py-2 mx-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#F27052" className="w-5 h-5">
+                    <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
+                    </svg>
+                  {secondaryCharacteristic}
                 </li>
-                <li className="text-left leading-8 flex py-2 italic mx-auto">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-6">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                      </svg>
-                {additionalCharacteristic}
+                <li className="text-left leading-8 flex justify-center items-center py-2 italic mx-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#F27052" className="w-5 h-5">
+                    <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
+                    </svg>
+                  {additionalCharacteristic}
                 </li>
             </ul>
 
@@ -48,7 +48,7 @@ const Results = ({ bodyShape, name, mainCharacteristic, secondaryCharacteristic,
             </div>
         </div>
       </div>
-      <div className="woman-img hidden lg:block lg:w-1/4">
+      <div className="woman-img hidden lg:block lg:w-1/4 h-auto">
         <Image
           src="/assets/images/woman-yellow-bathing-suit.svg"
           alt="woman in yellow bathing suit"

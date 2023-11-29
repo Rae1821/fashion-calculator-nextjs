@@ -12,7 +12,7 @@ const Nav = () => {
             <div className="flex justify-between items-center">
                 {/*Logo*/}
                 <Link href="/">
-                    <h2 className="text-lg text-light font-bold">The Body <span className="font-display text-2xl">Shape </span>Calculator</h2>
+                    <h2 className="text-lg text-light font-bold cursor-pointer">The Body <span className="font-display text-2xl">Shape </span>Calculator</h2>
                 </Link>
                 {/*Hamburger Button*/}
                 <div className="md:hidden">
@@ -30,19 +30,19 @@ const Nav = () => {
             </div>
             <div className={`flex-1 justify-self-center px-0 pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? 'p-12 md:p-0 block' : 'hidden'}`}>
                 <ul className="h-screen md:h-auto items-center justify-end md:flex">
-                    <li className="pb-6 md:pb-3 text-lg text-light py-2 md:px-6 text-center border-b-2 md:border-b-0 border-light-green hover:text-black md:hover:text-light-green hover:bg-light-green md:hover:bg-transparent">
+                    <li className="pb-6 md:pb-3 text-lg text-light py-2 md:px-6 text-center border-b-2 md:border-b-0 border-light-green hover:text-black hover:bg-light-green md:hover:bg-transparent transition ease-in duration-150">
                         <Link href="#benefits" onClick={() => setNavbar(!navbar)}>
-                            benefits
+                            Benefits
                         </Link>
                     </li>
-                    <li className="pb-6 md:pb-3 text-lg text-light py-2 md:px-6 text-center border-b-2 md:border-b-0 border-light-green hover:text-black md:hover:text-light-green hover:bg-light-green md:hover:bg-transparent">
+                    <li className="pb-6 md:pb-3 text-lg text-light py-2 md:pr-6 md:pl-0 text-center border-b-2 border-light-green hover:bg-light-green hover:text-black md:border-0 md:hover:bg-transparent transition ease-in duration-150">
                         <Link href="#tips" onClick={() => setNavbar(!navbar)}>
-                            tips
+                            Tips
                         </Link>
                     </li>
-                    <li className="pb-6 md:pb-3 text-lg text-light py-2 md:px-6 text-center border-b-2 md:border-b-0 border-light-green hover:text-black md:hover:text-light-green hover:bg-light-green md:hover:bg-transparent">
+                    <li className="pb-6 text-lg text-light py-2 md:px-4 md:py-1.5 text-center border-b-2 md:border-b-0 border-light-green hover:text-black  hover:bg-light-green md:bg-light-green md:text-black md:text-[14px] md:font-semibold md:rounded md:shadow-sm md:hover:opacity-80 transition ease-in duration-150">
                         <Link href="#lets-go" onClick={() => setNavbar(!navbar)}>
-                            get started
+                            Get started
                         </Link>
                     </li>
                 </ul>
